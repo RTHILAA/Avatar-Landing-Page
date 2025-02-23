@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+body {
+  overflow: hidden;
+  font-family: "Akaya Kanadaka", serif;
+  background: linear-gradient(to right, #01022d, #000);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenaire {
+  height: 85vh;
+  width: 85%;
+  background: linear-gradient(to right, #01022dcb 30%, #00000088),
+    url(IMG/AVATAR.jpg);
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.contenaire:hover {
+  background: linear-gradient(to right, #01022dcb 30%, transparent),
+    url(IMG/AVATAR.jpg);
+  background-size: cover;
+}
+.contenaire nav {
+  width: 90%;
+  height: 6vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.contenaire h3 {
+  font-size: 5vh;
+}
+
+.contenaire ul {
+  list-style: none;
+  display: flex;
+  gap: 4vh;
+}
+
+.contenaire a,
+li {
+  text-decoration: none;
+  transition: 0.6s;
+  font-size: 3vh;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+}
+
+#bars {
+  font-size: 3.5vh;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  display: none;
+}
+
+a:hover,
+#active,
+#bars:hover {
+  color: aqua;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 75vh;
+  width: 45%;
+  padding: 0 50px;
+  gap: 15px;
+}
+
+.content h2 {
+  font-size: 7vh;
+  letter-spacing: 3px;
+  color: aqua;
+}
+
+.content p {
+  font-size: 2.75vh;
+  line-height: 1.5;
+  font-family: "Acme", serif;
+  word-spacing: 2px;
+  width: 95%;
+}
+
+#btn {
+  font-size: 4vh;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0px 10px;
+}
+
+#btn:hover {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+@media (min-width: 950px) and (max-width: 1150px) {
+  .contenaire {
+    width: 90%;
+    height: 80vh;
+    background: linear-gradient(to bottom, #01022dcb 30%, #00000088),
+    url(IMG/AVATAR.jpg);
+  background-size: 100% 80vh;
+  }
+
+  .contenaire:hover {
+    background: linear-gradient(to bottom, #01022dcb 30%, transparent),
+      url(IMG/AVATAR.jpg);
+    background-size: 100% 80vh;
+  }
+
+  .contenaire nav {
+    width: 95%;
+  }
+
+  .contenaire h3 {
+    font-size: 3vh;
+  }
+
+  .contenaire ul {
+    gap: 3vh;
+  }
+
+  .contenaire a,
+  .contenaire li {
+    font-size: 2.5vh;
+  }
+
+  .content {
+    width: 60%;
+    padding: 0 20px;
+  }
+
+  .content h2 {
+    font-size: 5vh;
+  }
+
+  .content p {
+    font-size: 2.5vh;
+  }
+
+  #btn {
+    font-size: 3.5vh;
+  }
+}
+
+@media (max-width: 950px) {
+  .contenaire {
+    width: 95%;
+    height: 90vh;
+    background: linear-gradient(to bottom, #01022dcb 30%, #00000088),
+      url(IMG/AVATAR.jpg);
+    background-size: 100% 90vh;
+  }
+
+  .contenaire:hover {
+    background: linear-gradient(to bottom, #01022dcb 30%, transparent),
+      url(IMG/AVATAR.jpg);
+    background-size: 100% 90vh;
+  }
+
+  .contenaire nav {
+    width: 95%;
+    height: 8vh;
+  }
+
+  .contenaire h3 {
+    font-size: 4vh;
+  }
+
+  #bars {
+    display: flex;
+  }
+
+  .contenaire ul {
+    display: none;
+  }
+
+  .contenaire a,
+  .contenaire li {
+    font-size: 3vh;
+  }
+
+  .content {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+  }
+
+  .content h2 {
+    font-size: 5vh;
+    width: 80%;
+  }
+
+  .content p {
+    font-size: 2.5vh;
+    width: 75%;
+  }
+
+  #btn {
+    font-size: 3.5vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenaire {
+    height: 95vh;
+    background: linear-gradient(to bottom, #01022dcb 40%, #00000088),
+      url(IMG/AVATAR.jpg);
+    background-size: 100% 95vh;
+  }
+
+  .contenaire:hover {
+    background: linear-gradient(to bottom, #01022dcb 40%, transparent),
+      url(IMG/AVATAR.jpg);
+    background-size: 100% 95vh;
+  }
+
+  .contenaire nav {
+    height: 10vh;
+  }
+
+  .contenaire h3 {
+    font-size: 3.5vh;
+  }
+  .content {
+    width: 80%;
+    padding: 0px 10px;
+  }
+
+  .content h2 {
+    font-size: 3vh;
+  }
+
+  .content p {
+    font-size: 2vh;
+  }
+
+  #btn {
+    font-size: 3vh;
+  }
+}
